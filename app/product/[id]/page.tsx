@@ -19,7 +19,7 @@ interface ProductPageProps {
   };
 }
 
-export default function ProductPage({ params }: ProductPageProps) {
+export default async function ProductPage({ params }: ProductPageProps) {
   const product = featuredApps.find((app) => app.id === params.id);
 
   if (!product) {
